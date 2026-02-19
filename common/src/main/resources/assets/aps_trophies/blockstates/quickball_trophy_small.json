@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "aps_trophies:block/quickball_trophy_small",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "aps_trophies:block/quickball_trophy_small"
+    },
+    "facing=south": {
+      "model": "aps_trophies:block/quickball_trophy_small",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "aps_trophies:block/quickball_trophy_small",
+      "y": 270
+    }
+  }
+}

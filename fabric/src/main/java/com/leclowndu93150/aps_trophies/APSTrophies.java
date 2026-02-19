@@ -1,0 +1,223 @@
+package com.leclowndu93150.aps_trophies;
+
+import com.leclowndu93150.aps_trophies.block.RaceTrophyBlock;
+import com.leclowndu93150.aps_trophies.block.TrophyBlock;
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+
+public class APSTrophies implements ModInitializer {
+
+    public static final String MOD_ID = "aps_trophies";
+    private static BlockBehaviour.Properties trophyProps() {
+        return BlockBehaviour.Properties.of().noOcclusion().lightLevel(s -> 5);
+    }
+
+    public static final Block TIMERBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block SAFARIBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block QUICKBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block MOONBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block MASTERBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block LUXURYBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block LUREBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block DUSKBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block DIVEBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block BEASTBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block ANCIENTPOKEBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block ANCIENTORIGINBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block ANCIENTHEAVYBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block JADE_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block GOLD_BUGCATCHER_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block BRONZE_BUGCATCHER_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block SILVER_BUGCATCHER_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block SILVER_FISHER_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block BRONZE_FISHER_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block GOLD_FISHER_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block BRONZE_BOAT_TROPHY = new RaceTrophyBlock(trophyProps());
+    public static final Block BRONZE_CAR_TROPHY = new RaceTrophyBlock(trophyProps());
+    public static final Block BRONZE_PLANE_TROPHY = new RaceTrophyBlock(trophyProps());
+    public static final Block BRONZE_POKEMON_TROPHY = new RaceTrophyBlock(trophyProps());
+    public static final Block GOLD_BOAT_TROPHY = new RaceTrophyBlock(trophyProps());
+    public static final Block GOLD_CAR_TROPHY = new RaceTrophyBlock(trophyProps());
+    public static final Block GOLD_PLANE_TROPHY = new RaceTrophyBlock(trophyProps());
+    public static final Block GOLD_POKEMON_TROPHY = new RaceTrophyBlock(trophyProps());
+    public static final Block SILVER_BOAT_TROPHY = new RaceTrophyBlock(trophyProps());
+    public static final Block SILVER_CAR_TROPHY = new RaceTrophyBlock(trophyProps());
+    public static final Block SILVER_PLANE_TROPHY = new RaceTrophyBlock(trophyProps());
+    public static final Block SILVER_POKEMON_TROPHY = new RaceTrophyBlock(trophyProps());
+    public static final Block LUCARIO_POKEBALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block MELMETAL_GREATBALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block REGIGIGAS_ULTRABALL_TROPHY = new TrophyBlock(trophyProps());
+
+    public static final Item TIMERBALL_TROPHY_SMALL_ITEM = new BlockItem(TIMERBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item SAFARIBALL_TROPHY_SMALL_ITEM = new BlockItem(SAFARIBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item QUICKBALL_TROPHY_SMALL_ITEM = new BlockItem(QUICKBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item MOONBALL_TROPHY_SMALL_ITEM = new BlockItem(MOONBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item MASTERBALL_TROPHY_SMALL_ITEM = new BlockItem(MASTERBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item LUXURYBALL_TROPHY_SMALL_ITEM = new BlockItem(LUXURYBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item LUREBALL_TROPHY_SMALL_ITEM = new BlockItem(LUREBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item DUSKBALL_TROPHY_SMALL_ITEM = new BlockItem(DUSKBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item DIVEBALL_TROPHY_SMALL_ITEM = new BlockItem(DIVEBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item BEASTBALL_TROPHY_SMALL_ITEM = new BlockItem(BEASTBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item ANCIENTPOKEBALL_TROPHY_SMALL_ITEM = new BlockItem(ANCIENTPOKEBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item ANCIENTORIGINBALL_TROPHY_SMALL_ITEM = new BlockItem(ANCIENTORIGINBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item ANCIENTHEAVYBALL_TROPHY_SMALL_ITEM = new BlockItem(ANCIENTHEAVYBALL_TROPHY_SMALL, new Item.Properties());
+    public static final Item JADE_TROPHY_ITEM = new BlockItem(JADE_TROPHY, new Item.Properties());
+    public static final Item GOLD_BUGCATCHER_TROPHY_ITEM = new BlockItem(GOLD_BUGCATCHER_TROPHY, new Item.Properties());
+    public static final Item BRONZE_BUGCATCHER_TROPHY_ITEM = new BlockItem(BRONZE_BUGCATCHER_TROPHY, new Item.Properties());
+    public static final Item SILVER_BUGCATCHER_TROPHY_ITEM = new BlockItem(SILVER_BUGCATCHER_TROPHY, new Item.Properties());
+    public static final Item SILVER_FISHER_TROPHY_ITEM = new BlockItem(SILVER_FISHER_TROPHY, new Item.Properties());
+    public static final Item BRONZE_FISHER_TROPHY_ITEM = new BlockItem(BRONZE_FISHER_TROPHY, new Item.Properties());
+    public static final Item GOLD_FISHER_TROPHY_ITEM = new BlockItem(GOLD_FISHER_TROPHY, new Item.Properties());
+    public static final Item BRONZE_BOAT_TROPHY_ITEM = new BlockItem(BRONZE_BOAT_TROPHY, new Item.Properties());
+    public static final Item BRONZE_CAR_TROPHY_ITEM = new BlockItem(BRONZE_CAR_TROPHY, new Item.Properties());
+    public static final Item BRONZE_PLANE_TROPHY_ITEM = new BlockItem(BRONZE_PLANE_TROPHY, new Item.Properties());
+    public static final Item BRONZE_POKEMON_TROPHY_ITEM = new BlockItem(BRONZE_POKEMON_TROPHY, new Item.Properties());
+    public static final Item GOLD_BOAT_TROPHY_ITEM = new BlockItem(GOLD_BOAT_TROPHY, new Item.Properties());
+    public static final Item GOLD_CAR_TROPHY_ITEM = new BlockItem(GOLD_CAR_TROPHY, new Item.Properties());
+    public static final Item GOLD_PLANE_TROPHY_ITEM = new BlockItem(GOLD_PLANE_TROPHY, new Item.Properties());
+    public static final Item GOLD_POKEMON_TROPHY_ITEM = new BlockItem(GOLD_POKEMON_TROPHY, new Item.Properties());
+    public static final Item SILVER_BOAT_TROPHY_ITEM = new BlockItem(SILVER_BOAT_TROPHY, new Item.Properties());
+    public static final Item SILVER_CAR_TROPHY_ITEM = new BlockItem(SILVER_CAR_TROPHY, new Item.Properties());
+    public static final Item SILVER_PLANE_TROPHY_ITEM = new BlockItem(SILVER_PLANE_TROPHY, new Item.Properties());
+    public static final Item SILVER_POKEMON_TROPHY_ITEM = new BlockItem(SILVER_POKEMON_TROPHY, new Item.Properties());
+    public static final Item LUCARIO_POKEBALL_TROPHY_ITEM = new BlockItem(LUCARIO_POKEBALL_TROPHY, new Item.Properties());
+    public static final Item MELMETAL_GREATBALL_TROPHY_ITEM = new BlockItem(MELMETAL_GREATBALL_TROPHY, new Item.Properties());
+    public static final Item REGIGIGAS_ULTRABALL_TROPHY_ITEM = new BlockItem(REGIGIGAS_ULTRABALL_TROPHY, new Item.Properties());
+
+    @Override
+    public void onInitialize() {
+        registerBlock("timerball_trophy_small", TIMERBALL_TROPHY_SMALL);
+        registerBlock("safariball_trophy_small", SAFARIBALL_TROPHY_SMALL);
+        registerBlock("quickball_trophy_small", QUICKBALL_TROPHY_SMALL);
+        registerBlock("moonball_trophy_small", MOONBALL_TROPHY_SMALL);
+        registerBlock("masterball_trophy_small", MASTERBALL_TROPHY_SMALL);
+        registerBlock("luxuryball_trophy_small", LUXURYBALL_TROPHY_SMALL);
+        registerBlock("lureball_trophy_small", LUREBALL_TROPHY_SMALL);
+        registerBlock("duskball_trophy_small", DUSKBALL_TROPHY_SMALL);
+        registerBlock("diveball_trophy_small", DIVEBALL_TROPHY_SMALL);
+        registerBlock("beastball_trophy_small", BEASTBALL_TROPHY_SMALL);
+        registerBlock("ancientpokeball_trophy_small", ANCIENTPOKEBALL_TROPHY_SMALL);
+        registerBlock("ancientoriginball_trophy_small", ANCIENTORIGINBALL_TROPHY_SMALL);
+        registerBlock("ancientheavyball_trophy_small", ANCIENTHEAVYBALL_TROPHY_SMALL);
+        registerBlock("jade_trophy", JADE_TROPHY);
+        registerBlock("gold_bugcatcher_trophy", GOLD_BUGCATCHER_TROPHY);
+        registerBlock("bronze_bugcatcher_trophy", BRONZE_BUGCATCHER_TROPHY);
+        registerBlock("silver_bugcatcher_trophy", SILVER_BUGCATCHER_TROPHY);
+        registerBlock("silver_fisher_trophy", SILVER_FISHER_TROPHY);
+        registerBlock("bronze_fisher_trophy", BRONZE_FISHER_TROPHY);
+        registerBlock("gold_fisher_trophy", GOLD_FISHER_TROPHY);
+        registerBlock("bronze_boat_trophy", BRONZE_BOAT_TROPHY);
+        registerBlock("bronze_car_trophy", BRONZE_CAR_TROPHY);
+        registerBlock("bronze_plane_trophy", BRONZE_PLANE_TROPHY);
+        registerBlock("bronze_pokemon_trophy", BRONZE_POKEMON_TROPHY);
+        registerBlock("gold_boat_trophy", GOLD_BOAT_TROPHY);
+        registerBlock("gold_car_trophy", GOLD_CAR_TROPHY);
+        registerBlock("gold_plane_trophy", GOLD_PLANE_TROPHY);
+        registerBlock("gold_pokemon_trophy", GOLD_POKEMON_TROPHY);
+        registerBlock("silver_boat_trophy", SILVER_BOAT_TROPHY);
+        registerBlock("silver_car_trophy", SILVER_CAR_TROPHY);
+        registerBlock("silver_plane_trophy", SILVER_PLANE_TROPHY);
+        registerBlock("silver_pokemon_trophy", SILVER_POKEMON_TROPHY);
+        registerBlock("lucario_pokeball_trophy", LUCARIO_POKEBALL_TROPHY);
+        registerBlock("melmetal_greatball_trophy", MELMETAL_GREATBALL_TROPHY);
+        registerBlock("regigigas_ultraball_trophy", REGIGIGAS_ULTRABALL_TROPHY);
+
+        registerItem("timerball_trophy_small", TIMERBALL_TROPHY_SMALL_ITEM);
+        registerItem("safariball_trophy_small", SAFARIBALL_TROPHY_SMALL_ITEM);
+        registerItem("quickball_trophy_small", QUICKBALL_TROPHY_SMALL_ITEM);
+        registerItem("moonball_trophy_small", MOONBALL_TROPHY_SMALL_ITEM);
+        registerItem("masterball_trophy_small", MASTERBALL_TROPHY_SMALL_ITEM);
+        registerItem("luxuryball_trophy_small", LUXURYBALL_TROPHY_SMALL_ITEM);
+        registerItem("lureball_trophy_small", LUREBALL_TROPHY_SMALL_ITEM);
+        registerItem("duskball_trophy_small", DUSKBALL_TROPHY_SMALL_ITEM);
+        registerItem("diveball_trophy_small", DIVEBALL_TROPHY_SMALL_ITEM);
+        registerItem("beastball_trophy_small", BEASTBALL_TROPHY_SMALL_ITEM);
+        registerItem("ancientpokeball_trophy_small", ANCIENTPOKEBALL_TROPHY_SMALL_ITEM);
+        registerItem("ancientoriginball_trophy_small", ANCIENTORIGINBALL_TROPHY_SMALL_ITEM);
+        registerItem("ancientheavyball_trophy_small", ANCIENTHEAVYBALL_TROPHY_SMALL_ITEM);
+        registerItem("jade_trophy", JADE_TROPHY_ITEM);
+        registerItem("gold_bugcatcher_trophy", GOLD_BUGCATCHER_TROPHY_ITEM);
+        registerItem("bronze_bugcatcher_trophy", BRONZE_BUGCATCHER_TROPHY_ITEM);
+        registerItem("silver_bugcatcher_trophy", SILVER_BUGCATCHER_TROPHY_ITEM);
+        registerItem("silver_fisher_trophy", SILVER_FISHER_TROPHY_ITEM);
+        registerItem("bronze_fisher_trophy", BRONZE_FISHER_TROPHY_ITEM);
+        registerItem("gold_fisher_trophy", GOLD_FISHER_TROPHY_ITEM);
+        registerItem("bronze_boat_trophy", BRONZE_BOAT_TROPHY_ITEM);
+        registerItem("bronze_car_trophy", BRONZE_CAR_TROPHY_ITEM);
+        registerItem("bronze_plane_trophy", BRONZE_PLANE_TROPHY_ITEM);
+        registerItem("bronze_pokemon_trophy", BRONZE_POKEMON_TROPHY_ITEM);
+        registerItem("gold_boat_trophy", GOLD_BOAT_TROPHY_ITEM);
+        registerItem("gold_car_trophy", GOLD_CAR_TROPHY_ITEM);
+        registerItem("gold_plane_trophy", GOLD_PLANE_TROPHY_ITEM);
+        registerItem("gold_pokemon_trophy", GOLD_POKEMON_TROPHY_ITEM);
+        registerItem("silver_boat_trophy", SILVER_BOAT_TROPHY_ITEM);
+        registerItem("silver_car_trophy", SILVER_CAR_TROPHY_ITEM);
+        registerItem("silver_plane_trophy", SILVER_PLANE_TROPHY_ITEM);
+        registerItem("silver_pokemon_trophy", SILVER_POKEMON_TROPHY_ITEM);
+        registerItem("lucario_pokeball_trophy", LUCARIO_POKEBALL_TROPHY_ITEM);
+        registerItem("melmetal_greatball_trophy", MELMETAL_GREATBALL_TROPHY_ITEM);
+        registerItem("regigigas_ultraball_trophy", REGIGIGAS_ULTRABALL_TROPHY_ITEM);
+
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+                ResourceLocation.fromNamespaceAndPath(MOD_ID, "trophies"),
+                FabricItemGroup.builder()
+                        .title(Component.translatable("itemgroup.aps_trophies"))
+                        .icon(() -> new ItemStack(DUSKBALL_TROPHY_SMALL_ITEM))
+                        .displayItems((params, output) -> {
+                            output.accept(TIMERBALL_TROPHY_SMALL_ITEM);
+                            output.accept(SAFARIBALL_TROPHY_SMALL_ITEM);
+                            output.accept(QUICKBALL_TROPHY_SMALL_ITEM);
+                            output.accept(MOONBALL_TROPHY_SMALL_ITEM);
+                            output.accept(MASTERBALL_TROPHY_SMALL_ITEM);
+                            output.accept(LUXURYBALL_TROPHY_SMALL_ITEM);
+                            output.accept(LUREBALL_TROPHY_SMALL_ITEM);
+                            output.accept(DUSKBALL_TROPHY_SMALL_ITEM);
+                            output.accept(DIVEBALL_TROPHY_SMALL_ITEM);
+                            output.accept(BEASTBALL_TROPHY_SMALL_ITEM);
+                            output.accept(ANCIENTPOKEBALL_TROPHY_SMALL_ITEM);
+                            output.accept(ANCIENTORIGINBALL_TROPHY_SMALL_ITEM);
+                            output.accept(ANCIENTHEAVYBALL_TROPHY_SMALL_ITEM);
+                            output.accept(JADE_TROPHY_ITEM);
+                            output.accept(GOLD_BUGCATCHER_TROPHY_ITEM);
+                            output.accept(BRONZE_BUGCATCHER_TROPHY_ITEM);
+                            output.accept(SILVER_BUGCATCHER_TROPHY_ITEM);
+                            output.accept(SILVER_FISHER_TROPHY_ITEM);
+                            output.accept(BRONZE_FISHER_TROPHY_ITEM);
+                            output.accept(GOLD_FISHER_TROPHY_ITEM);
+                            output.accept(BRONZE_BOAT_TROPHY_ITEM);
+                            output.accept(BRONZE_CAR_TROPHY_ITEM);
+                            output.accept(BRONZE_PLANE_TROPHY_ITEM);
+                            output.accept(BRONZE_POKEMON_TROPHY_ITEM);
+                            output.accept(GOLD_BOAT_TROPHY_ITEM);
+                            output.accept(GOLD_CAR_TROPHY_ITEM);
+                            output.accept(GOLD_PLANE_TROPHY_ITEM);
+                            output.accept(GOLD_POKEMON_TROPHY_ITEM);
+                            output.accept(SILVER_BOAT_TROPHY_ITEM);
+                            output.accept(SILVER_CAR_TROPHY_ITEM);
+                            output.accept(SILVER_PLANE_TROPHY_ITEM);
+                            output.accept(SILVER_POKEMON_TROPHY_ITEM);
+                            output.accept(LUCARIO_POKEBALL_TROPHY_ITEM);
+                            output.accept(MELMETAL_GREATBALL_TROPHY_ITEM);
+                            output.accept(REGIGIGAS_ULTRABALL_TROPHY_ITEM);
+                        })
+                        .build());
+    }
+
+    private static void registerBlock(String name, Block block) {
+        Registry.register(BuiltInRegistries.BLOCK, ResourceLocation.fromNamespaceAndPath(MOD_ID, name), block);
+    }
+
+    private static void registerItem(String name, Item item) {
+        Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, name), item);
+    }
+}
