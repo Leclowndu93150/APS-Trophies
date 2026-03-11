@@ -15,6 +15,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class RaceTrophyBlock extends TrophyBlock {
@@ -23,7 +25,7 @@ public class RaceTrophyBlock extends TrophyBlock {
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
 
     public RaceTrophyBlock(BlockBehaviour.Properties properties) {
-        super(properties);
+        super(properties, TrophyShapeProfile.RACE);
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, net.minecraft.core.Direction.NORTH)
                 .setValue(HALF, DoubleBlockHalf.LOWER));
@@ -53,6 +55,18 @@ public class RaceTrophyBlock extends TrophyBlock {
     @Override
     public RenderShape getRenderShape(BlockState state) {
         return state.getValue(HALF) == DoubleBlockHalf.UPPER ? RenderShape.MODEL : RenderShape.INVISIBLE;
+    }
+
+    @Override
+    public VoxelShape getShape(BlockState state, net.minecraft.world.level.BlockGetter level, BlockPos pos, CollisionContext context) {
+        return state.getValue(HALF) == DoubleBlockHalf.UPPER
+                ? this.shapeProfile.upper(state.getValue(FACING))
+                : this.shapeProfile.lower(state.getValue(FACING));
+    }
+
+    @Override
+    public VoxelShape getCollisionShape(BlockState state, net.minecraft.world.level.BlockGetter level, BlockPos pos, CollisionContext context) {
+        return this.getShape(state, level, pos, context);
     }
 
     @Override

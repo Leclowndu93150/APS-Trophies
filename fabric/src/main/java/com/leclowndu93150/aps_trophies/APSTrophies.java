@@ -2,6 +2,7 @@ package com.leclowndu93150.aps_trophies;
 
 import com.leclowndu93150.aps_trophies.block.RaceTrophyBlock;
 import com.leclowndu93150.aps_trophies.block.TrophyBlock;
+import com.leclowndu93150.aps_trophies.block.TrophyShapeProfile;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.core.Registry;
@@ -22,64 +23,76 @@ public class APSTrophies implements ModInitializer {
         return BlockBehaviour.Properties.of().noOcclusion().lightLevel(s -> 5);
     }
 
-    public static final Block TIMERBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block SAFARIBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block QUICKBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block MOONBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block MASTERBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block LUXURYBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block LUREBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block DUSKBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block DIVEBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block BEASTBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block ANCIENTPOKEBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block ANCIENTORIGINBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block ANCIENTHEAVYBALL_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block JADE_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block GOLD_BUGCATCHER_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block BRONZE_BUGCATCHER_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block SILVER_BUGCATCHER_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block SILVER_FISHER_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block BRONZE_FISHER_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block GOLD_FISHER_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block BRONZE_BOAT_TROPHY = new RaceTrophyBlock(trophyProps());
-    public static final Block BRONZE_CAR_TROPHY = new RaceTrophyBlock(trophyProps());
-    public static final Block BRONZE_PLANE_TROPHY = new RaceTrophyBlock(trophyProps());
-    public static final Block BRONZE_POKEMON_TROPHY = new RaceTrophyBlock(trophyProps());
-    public static final Block GOLD_BOAT_TROPHY = new RaceTrophyBlock(trophyProps());
-    public static final Block GOLD_CAR_TROPHY = new RaceTrophyBlock(trophyProps());
-    public static final Block GOLD_PLANE_TROPHY = new RaceTrophyBlock(trophyProps());
-    public static final Block GOLD_POKEMON_TROPHY = new RaceTrophyBlock(trophyProps());
-    public static final Block SILVER_BOAT_TROPHY = new RaceTrophyBlock(trophyProps());
-    public static final Block SILVER_CAR_TROPHY = new RaceTrophyBlock(trophyProps());
-    public static final Block SILVER_PLANE_TROPHY = new RaceTrophyBlock(trophyProps());
-    public static final Block SILVER_POKEMON_TROPHY = new RaceTrophyBlock(trophyProps());
-    public static final Block LUCARIO_POKEBALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block MELMETAL_GREATBALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block REGIGIGAS_ULTRABALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block AZURE_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block CHERISH_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block CITRINE_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block DREAM_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block FAST_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block FEATHER_TROPHY_SMALL = new TrophyBlock(trophyProps());
-    public static final Block FRIEND_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block GREAT_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block HEAL_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block HEAVY_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block LEVEL_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block LOVE_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block NEST_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block NET_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block PARK_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block POKEBALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block PREMIER_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block REPEAT_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block ROSEATE_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block SLATE_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block SPORT_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block ULTRA_BALL_TROPHY = new TrophyBlock(trophyProps());
-    public static final Block VERDANT_BALL_TROPHY = new TrophyBlock(trophyProps());
+    private static Block ballTrophy() {
+        return new TrophyBlock(trophyProps(), TrophyShapeProfile.BALL);
+    }
+
+    private static Block statueTrophy() {
+        return new TrophyBlock(trophyProps(), TrophyShapeProfile.SINGLE_STATUE);
+    }
+
+    private static Block raceTrophy() {
+        return new RaceTrophyBlock(trophyProps());
+    }
+
+    public static final Block TIMERBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block SAFARIBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block QUICKBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block MOONBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block MASTERBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block LUXURYBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block LUREBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block DUSKBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block DIVEBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block BEASTBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block ANCIENTPOKEBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block ANCIENTORIGINBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block ANCIENTHEAVYBALL_TROPHY_SMALL = ballTrophy();
+    public static final Block JADE_TROPHY = statueTrophy();
+    public static final Block GOLD_BUGCATCHER_TROPHY = statueTrophy();
+    public static final Block BRONZE_BUGCATCHER_TROPHY = statueTrophy();
+    public static final Block SILVER_BUGCATCHER_TROPHY = statueTrophy();
+    public static final Block SILVER_FISHER_TROPHY = statueTrophy();
+    public static final Block BRONZE_FISHER_TROPHY = statueTrophy();
+    public static final Block GOLD_FISHER_TROPHY = statueTrophy();
+    public static final Block BRONZE_BOAT_TROPHY = raceTrophy();
+    public static final Block BRONZE_CAR_TROPHY = raceTrophy();
+    public static final Block BRONZE_PLANE_TROPHY = raceTrophy();
+    public static final Block BRONZE_POKEMON_TROPHY = raceTrophy();
+    public static final Block GOLD_BOAT_TROPHY = raceTrophy();
+    public static final Block GOLD_CAR_TROPHY = raceTrophy();
+    public static final Block GOLD_PLANE_TROPHY = raceTrophy();
+    public static final Block GOLD_POKEMON_TROPHY = raceTrophy();
+    public static final Block SILVER_BOAT_TROPHY = raceTrophy();
+    public static final Block SILVER_CAR_TROPHY = raceTrophy();
+    public static final Block SILVER_PLANE_TROPHY = raceTrophy();
+    public static final Block SILVER_POKEMON_TROPHY = raceTrophy();
+    public static final Block LUCARIO_POKEBALL_TROPHY = statueTrophy();
+    public static final Block MELMETAL_GREATBALL_TROPHY = statueTrophy();
+    public static final Block REGIGIGAS_ULTRABALL_TROPHY = statueTrophy();
+    public static final Block AZURE_BALL_TROPHY = ballTrophy();
+    public static final Block CHERISH_BALL_TROPHY = ballTrophy();
+    public static final Block CITRINE_BALL_TROPHY = ballTrophy();
+    public static final Block DREAM_BALL_TROPHY = ballTrophy();
+    public static final Block FAST_BALL_TROPHY = ballTrophy();
+    public static final Block FEATHER_TROPHY_SMALL = ballTrophy();
+    public static final Block FRIEND_BALL_TROPHY = ballTrophy();
+    public static final Block GREAT_BALL_TROPHY = ballTrophy();
+    public static final Block HEAL_BALL_TROPHY = ballTrophy();
+    public static final Block HEAVY_BALL_TROPHY = ballTrophy();
+    public static final Block LEVEL_BALL_TROPHY = ballTrophy();
+    public static final Block LOVE_BALL_TROPHY = ballTrophy();
+    public static final Block NEST_BALL_TROPHY = ballTrophy();
+    public static final Block NET_BALL_TROPHY = ballTrophy();
+    public static final Block PARK_BALL_TROPHY = ballTrophy();
+    public static final Block POKEBALL_TROPHY = ballTrophy();
+    public static final Block PREMIER_BALL_TROPHY = ballTrophy();
+    public static final Block REPEAT_BALL_TROPHY = ballTrophy();
+    public static final Block ROSEATE_BALL_TROPHY = ballTrophy();
+    public static final Block SLATE_BALL_TROPHY = ballTrophy();
+    public static final Block SPORT_BALL_TROPHY = ballTrophy();
+    public static final Block ULTRA_BALL_TROPHY = ballTrophy();
+    public static final Block VERDANT_BALL_TROPHY = ballTrophy();
 
     public static final Item TIMERBALL_TROPHY_SMALL_ITEM = new BlockItem(TIMERBALL_TROPHY_SMALL, new Item.Properties());
     public static final Item SAFARIBALL_TROPHY_SMALL_ITEM = new BlockItem(SAFARIBALL_TROPHY_SMALL, new Item.Properties());

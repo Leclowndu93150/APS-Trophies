@@ -2,6 +2,7 @@ package com.leclowndu93150.aps_trophies;
 
 import com.leclowndu93150.aps_trophies.block.RaceTrophyBlock;
 import com.leclowndu93150.aps_trophies.block.TrophyBlock;
+import com.leclowndu93150.aps_trophies.block.TrophyShapeProfile;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
@@ -30,64 +31,76 @@ public class APSTrophies {
         return BlockBehaviour.Properties.of().noOcclusion().lightLevel(s -> 5);
     }
 
-    public static final DeferredBlock<Block> TIMERBALL_TROPHY_SMALL = BLOCKS.register("timerball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> SAFARIBALL_TROPHY_SMALL = BLOCKS.register("safariball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> QUICKBALL_TROPHY_SMALL = BLOCKS.register("quickball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> MOONBALL_TROPHY_SMALL = BLOCKS.register("moonball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> MASTERBALL_TROPHY_SMALL = BLOCKS.register("masterball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> LUXURYBALL_TROPHY_SMALL = BLOCKS.register("luxuryball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> LUREBALL_TROPHY_SMALL = BLOCKS.register("lureball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> DUSKBALL_TROPHY_SMALL = BLOCKS.register("duskball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> DIVEBALL_TROPHY_SMALL = BLOCKS.register("diveball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> BEASTBALL_TROPHY_SMALL = BLOCKS.register("beastball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> ANCIENTPOKEBALL_TROPHY_SMALL = BLOCKS.register("ancientpokeball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> ANCIENTORIGINBALL_TROPHY_SMALL = BLOCKS.register("ancientoriginball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> ANCIENTHEAVYBALL_TROPHY_SMALL = BLOCKS.register("ancientheavyball_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> JADE_TROPHY = BLOCKS.register("jade_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> GOLD_BUGCATCHER_TROPHY = BLOCKS.register("gold_bugcatcher_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> BRONZE_BUGCATCHER_TROPHY = BLOCKS.register("bronze_bugcatcher_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> SILVER_BUGCATCHER_TROPHY = BLOCKS.register("silver_bugcatcher_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> SILVER_FISHER_TROPHY = BLOCKS.register("silver_fisher_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> BRONZE_FISHER_TROPHY = BLOCKS.register("bronze_fisher_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> GOLD_FISHER_TROPHY = BLOCKS.register("gold_fisher_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> BRONZE_BOAT_TROPHY = BLOCKS.register("bronze_boat_trophy", () -> new RaceTrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> BRONZE_CAR_TROPHY = BLOCKS.register("bronze_car_trophy", () -> new RaceTrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> BRONZE_PLANE_TROPHY = BLOCKS.register("bronze_plane_trophy", () -> new RaceTrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> BRONZE_POKEMON_TROPHY = BLOCKS.register("bronze_pokemon_trophy", () -> new RaceTrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> GOLD_BOAT_TROPHY = BLOCKS.register("gold_boat_trophy", () -> new RaceTrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> GOLD_CAR_TROPHY = BLOCKS.register("gold_car_trophy", () -> new RaceTrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> GOLD_PLANE_TROPHY = BLOCKS.register("gold_plane_trophy", () -> new RaceTrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> GOLD_POKEMON_TROPHY = BLOCKS.register("gold_pokemon_trophy", () -> new RaceTrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> SILVER_BOAT_TROPHY = BLOCKS.register("silver_boat_trophy", () -> new RaceTrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> SILVER_CAR_TROPHY = BLOCKS.register("silver_car_trophy", () -> new RaceTrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> SILVER_PLANE_TROPHY = BLOCKS.register("silver_plane_trophy", () -> new RaceTrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> SILVER_POKEMON_TROPHY = BLOCKS.register("silver_pokemon_trophy", () -> new RaceTrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> LUCARIO_POKEBALL_TROPHY = BLOCKS.register("lucario_pokeball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> MELMETAL_GREATBALL_TROPHY = BLOCKS.register("melmetal_greatball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> REGIGIGAS_ULTRABALL_TROPHY = BLOCKS.register("regigigas_ultraball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> AZURE_BALL_TROPHY = BLOCKS.register("azure_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> CHERISH_BALL_TROPHY = BLOCKS.register("cherish_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> CITRINE_BALL_TROPHY = BLOCKS.register("citrine_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> DREAM_BALL_TROPHY = BLOCKS.register("dream_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> FAST_BALL_TROPHY = BLOCKS.register("fast_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> FEATHER_TROPHY_SMALL = BLOCKS.register("feather_trophy_small", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> FRIEND_BALL_TROPHY = BLOCKS.register("friend_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> GREAT_BALL_TROPHY = BLOCKS.register("great_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> HEAL_BALL_TROPHY = BLOCKS.register("heal_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> HEAVY_BALL_TROPHY = BLOCKS.register("heavy_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> LEVEL_BALL_TROPHY = BLOCKS.register("level_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> LOVE_BALL_TROPHY = BLOCKS.register("love_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> NEST_BALL_TROPHY = BLOCKS.register("nest_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> NET_BALL_TROPHY = BLOCKS.register("net_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> PARK_BALL_TROPHY = BLOCKS.register("park_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> POKEBALL_TROPHY = BLOCKS.register("pokeball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> PREMIER_BALL_TROPHY = BLOCKS.register("premier_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> REPEAT_BALL_TROPHY = BLOCKS.register("repeat_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> ROSEATE_BALL_TROPHY = BLOCKS.register("roseate_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> SLATE_BALL_TROPHY = BLOCKS.register("slate_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> SPORT_BALL_TROPHY = BLOCKS.register("sport_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> ULTRA_BALL_TROPHY = BLOCKS.register("ultra_ball_trophy", () -> new TrophyBlock(trophyProps()));
-    public static final DeferredBlock<Block> VERDANT_BALL_TROPHY = BLOCKS.register("verdant_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    private static Block ballTrophy() {
+        return new TrophyBlock(trophyProps(), TrophyShapeProfile.BALL);
+    }
+
+    private static Block statueTrophy() {
+        return new TrophyBlock(trophyProps(), TrophyShapeProfile.SINGLE_STATUE);
+    }
+
+    private static Block raceTrophy() {
+        return new RaceTrophyBlock(trophyProps());
+    }
+
+    public static final DeferredBlock<Block> TIMERBALL_TROPHY_SMALL = BLOCKS.register("timerball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> SAFARIBALL_TROPHY_SMALL = BLOCKS.register("safariball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> QUICKBALL_TROPHY_SMALL = BLOCKS.register("quickball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> MOONBALL_TROPHY_SMALL = BLOCKS.register("moonball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> MASTERBALL_TROPHY_SMALL = BLOCKS.register("masterball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> LUXURYBALL_TROPHY_SMALL = BLOCKS.register("luxuryball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> LUREBALL_TROPHY_SMALL = BLOCKS.register("lureball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> DUSKBALL_TROPHY_SMALL = BLOCKS.register("duskball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> DIVEBALL_TROPHY_SMALL = BLOCKS.register("diveball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> BEASTBALL_TROPHY_SMALL = BLOCKS.register("beastball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> ANCIENTPOKEBALL_TROPHY_SMALL = BLOCKS.register("ancientpokeball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> ANCIENTORIGINBALL_TROPHY_SMALL = BLOCKS.register("ancientoriginball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> ANCIENTHEAVYBALL_TROPHY_SMALL = BLOCKS.register("ancientheavyball_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> JADE_TROPHY = BLOCKS.register("jade_trophy", APSTrophies::statueTrophy);
+    public static final DeferredBlock<Block> GOLD_BUGCATCHER_TROPHY = BLOCKS.register("gold_bugcatcher_trophy", APSTrophies::statueTrophy);
+    public static final DeferredBlock<Block> BRONZE_BUGCATCHER_TROPHY = BLOCKS.register("bronze_bugcatcher_trophy", APSTrophies::statueTrophy);
+    public static final DeferredBlock<Block> SILVER_BUGCATCHER_TROPHY = BLOCKS.register("silver_bugcatcher_trophy", APSTrophies::statueTrophy);
+    public static final DeferredBlock<Block> SILVER_FISHER_TROPHY = BLOCKS.register("silver_fisher_trophy", APSTrophies::statueTrophy);
+    public static final DeferredBlock<Block> BRONZE_FISHER_TROPHY = BLOCKS.register("bronze_fisher_trophy", APSTrophies::statueTrophy);
+    public static final DeferredBlock<Block> GOLD_FISHER_TROPHY = BLOCKS.register("gold_fisher_trophy", APSTrophies::statueTrophy);
+    public static final DeferredBlock<Block> BRONZE_BOAT_TROPHY = BLOCKS.register("bronze_boat_trophy", APSTrophies::raceTrophy);
+    public static final DeferredBlock<Block> BRONZE_CAR_TROPHY = BLOCKS.register("bronze_car_trophy", APSTrophies::raceTrophy);
+    public static final DeferredBlock<Block> BRONZE_PLANE_TROPHY = BLOCKS.register("bronze_plane_trophy", APSTrophies::raceTrophy);
+    public static final DeferredBlock<Block> BRONZE_POKEMON_TROPHY = BLOCKS.register("bronze_pokemon_trophy", APSTrophies::raceTrophy);
+    public static final DeferredBlock<Block> GOLD_BOAT_TROPHY = BLOCKS.register("gold_boat_trophy", APSTrophies::raceTrophy);
+    public static final DeferredBlock<Block> GOLD_CAR_TROPHY = BLOCKS.register("gold_car_trophy", APSTrophies::raceTrophy);
+    public static final DeferredBlock<Block> GOLD_PLANE_TROPHY = BLOCKS.register("gold_plane_trophy", APSTrophies::raceTrophy);
+    public static final DeferredBlock<Block> GOLD_POKEMON_TROPHY = BLOCKS.register("gold_pokemon_trophy", APSTrophies::raceTrophy);
+    public static final DeferredBlock<Block> SILVER_BOAT_TROPHY = BLOCKS.register("silver_boat_trophy", APSTrophies::raceTrophy);
+    public static final DeferredBlock<Block> SILVER_CAR_TROPHY = BLOCKS.register("silver_car_trophy", APSTrophies::raceTrophy);
+    public static final DeferredBlock<Block> SILVER_PLANE_TROPHY = BLOCKS.register("silver_plane_trophy", APSTrophies::raceTrophy);
+    public static final DeferredBlock<Block> SILVER_POKEMON_TROPHY = BLOCKS.register("silver_pokemon_trophy", APSTrophies::raceTrophy);
+    public static final DeferredBlock<Block> LUCARIO_POKEBALL_TROPHY = BLOCKS.register("lucario_pokeball_trophy", APSTrophies::statueTrophy);
+    public static final DeferredBlock<Block> MELMETAL_GREATBALL_TROPHY = BLOCKS.register("melmetal_greatball_trophy", APSTrophies::statueTrophy);
+    public static final DeferredBlock<Block> REGIGIGAS_ULTRABALL_TROPHY = BLOCKS.register("regigigas_ultraball_trophy", APSTrophies::statueTrophy);
+    public static final DeferredBlock<Block> AZURE_BALL_TROPHY = BLOCKS.register("azure_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> CHERISH_BALL_TROPHY = BLOCKS.register("cherish_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> CITRINE_BALL_TROPHY = BLOCKS.register("citrine_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> DREAM_BALL_TROPHY = BLOCKS.register("dream_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> FAST_BALL_TROPHY = BLOCKS.register("fast_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> FEATHER_TROPHY_SMALL = BLOCKS.register("feather_trophy_small", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> FRIEND_BALL_TROPHY = BLOCKS.register("friend_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> GREAT_BALL_TROPHY = BLOCKS.register("great_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> HEAL_BALL_TROPHY = BLOCKS.register("heal_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> HEAVY_BALL_TROPHY = BLOCKS.register("heavy_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> LEVEL_BALL_TROPHY = BLOCKS.register("level_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> LOVE_BALL_TROPHY = BLOCKS.register("love_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> NEST_BALL_TROPHY = BLOCKS.register("nest_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> NET_BALL_TROPHY = BLOCKS.register("net_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> PARK_BALL_TROPHY = BLOCKS.register("park_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> POKEBALL_TROPHY = BLOCKS.register("pokeball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> PREMIER_BALL_TROPHY = BLOCKS.register("premier_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> REPEAT_BALL_TROPHY = BLOCKS.register("repeat_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> ROSEATE_BALL_TROPHY = BLOCKS.register("roseate_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> SLATE_BALL_TROPHY = BLOCKS.register("slate_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> SPORT_BALL_TROPHY = BLOCKS.register("sport_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> ULTRA_BALL_TROPHY = BLOCKS.register("ultra_ball_trophy", APSTrophies::ballTrophy);
+    public static final DeferredBlock<Block> VERDANT_BALL_TROPHY = BLOCKS.register("verdant_ball_trophy", APSTrophies::ballTrophy);
 
     public static final DeferredItem<BlockItem> TIMERBALL_TROPHY_SMALL_ITEM = ITEMS.registerSimpleBlockItem(TIMERBALL_TROPHY_SMALL);
     public static final DeferredItem<BlockItem> SAFARIBALL_TROPHY_SMALL_ITEM = ITEMS.registerSimpleBlockItem(SAFARIBALL_TROPHY_SMALL);
