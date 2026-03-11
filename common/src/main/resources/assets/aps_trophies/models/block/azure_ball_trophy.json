@@ -1,0 +1,7 @@
+{
+  "parent": "aps_trophies:block/timerball_trophy_small",
+  "textures": {
+    "0": "aps_trophies:block/azure_ball_trophy",
+    "particle": "aps_trophies:block/azure_ball_trophy"
+  }
+}

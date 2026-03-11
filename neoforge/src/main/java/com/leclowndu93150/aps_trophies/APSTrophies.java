@@ -65,6 +65,29 @@ public class APSTrophies {
     public static final DeferredBlock<Block> LUCARIO_POKEBALL_TROPHY = BLOCKS.register("lucario_pokeball_trophy", () -> new TrophyBlock(trophyProps()));
     public static final DeferredBlock<Block> MELMETAL_GREATBALL_TROPHY = BLOCKS.register("melmetal_greatball_trophy", () -> new TrophyBlock(trophyProps()));
     public static final DeferredBlock<Block> REGIGIGAS_ULTRABALL_TROPHY = BLOCKS.register("regigigas_ultraball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> AZURE_BALL_TROPHY = BLOCKS.register("azure_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> CHERISH_BALL_TROPHY = BLOCKS.register("cherish_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> CITRINE_BALL_TROPHY = BLOCKS.register("citrine_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> DREAM_BALL_TROPHY = BLOCKS.register("dream_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> FAST_BALL_TROPHY = BLOCKS.register("fast_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> FEATHER_TROPHY_SMALL = BLOCKS.register("feather_trophy_small", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> FRIEND_BALL_TROPHY = BLOCKS.register("friend_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> GREAT_BALL_TROPHY = BLOCKS.register("great_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> HEAL_BALL_TROPHY = BLOCKS.register("heal_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> HEAVY_BALL_TROPHY = BLOCKS.register("heavy_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> LEVEL_BALL_TROPHY = BLOCKS.register("level_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> LOVE_BALL_TROPHY = BLOCKS.register("love_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> NEST_BALL_TROPHY = BLOCKS.register("nest_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> NET_BALL_TROPHY = BLOCKS.register("net_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> PARK_BALL_TROPHY = BLOCKS.register("park_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> POKEBALL_TROPHY = BLOCKS.register("pokeball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> PREMIER_BALL_TROPHY = BLOCKS.register("premier_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> REPEAT_BALL_TROPHY = BLOCKS.register("repeat_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> ROSEATE_BALL_TROPHY = BLOCKS.register("roseate_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> SLATE_BALL_TROPHY = BLOCKS.register("slate_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> SPORT_BALL_TROPHY = BLOCKS.register("sport_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> ULTRA_BALL_TROPHY = BLOCKS.register("ultra_ball_trophy", () -> new TrophyBlock(trophyProps()));
+    public static final DeferredBlock<Block> VERDANT_BALL_TROPHY = BLOCKS.register("verdant_ball_trophy", () -> new TrophyBlock(trophyProps()));
 
     public static final DeferredItem<BlockItem> TIMERBALL_TROPHY_SMALL_ITEM = ITEMS.registerSimpleBlockItem(TIMERBALL_TROPHY_SMALL);
     public static final DeferredItem<BlockItem> SAFARIBALL_TROPHY_SMALL_ITEM = ITEMS.registerSimpleBlockItem(SAFARIBALL_TROPHY_SMALL);
@@ -101,6 +124,29 @@ public class APSTrophies {
     public static final DeferredItem<BlockItem> LUCARIO_POKEBALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(LUCARIO_POKEBALL_TROPHY);
     public static final DeferredItem<BlockItem> MELMETAL_GREATBALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(MELMETAL_GREATBALL_TROPHY);
     public static final DeferredItem<BlockItem> REGIGIGAS_ULTRABALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(REGIGIGAS_ULTRABALL_TROPHY);
+    public static final DeferredItem<BlockItem> AZURE_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(AZURE_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> CHERISH_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(CHERISH_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> CITRINE_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(CITRINE_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> DREAM_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(DREAM_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> FAST_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(FAST_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> FEATHER_TROPHY_SMALL_ITEM = ITEMS.registerSimpleBlockItem(FEATHER_TROPHY_SMALL);
+    public static final DeferredItem<BlockItem> FRIEND_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(FRIEND_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> GREAT_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(GREAT_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> HEAL_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(HEAL_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> HEAVY_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(HEAVY_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> LEVEL_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(LEVEL_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> LOVE_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(LOVE_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> NEST_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(NEST_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> NET_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(NET_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> PARK_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(PARK_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> POKEBALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(POKEBALL_TROPHY);
+    public static final DeferredItem<BlockItem> PREMIER_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(PREMIER_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> REPEAT_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(REPEAT_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> ROSEATE_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(ROSEATE_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> SLATE_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(SLATE_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> SPORT_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(SPORT_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> ULTRA_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(ULTRA_BALL_TROPHY);
+    public static final DeferredItem<BlockItem> VERDANT_BALL_TROPHY_ITEM = ITEMS.registerSimpleBlockItem(VERDANT_BALL_TROPHY);
 
     public static final Supplier<CreativeModeTab> TROPHY_TAB = TABS.register("trophies", () ->
             CreativeModeTab.builder()
@@ -142,6 +188,29 @@ public class APSTrophies {
                         output.accept(LUCARIO_POKEBALL_TROPHY_ITEM.get());
                         output.accept(MELMETAL_GREATBALL_TROPHY_ITEM.get());
                         output.accept(REGIGIGAS_ULTRABALL_TROPHY_ITEM.get());
+                        output.accept(AZURE_BALL_TROPHY_ITEM.get());
+                        output.accept(CHERISH_BALL_TROPHY_ITEM.get());
+                        output.accept(CITRINE_BALL_TROPHY_ITEM.get());
+                        output.accept(DREAM_BALL_TROPHY_ITEM.get());
+                        output.accept(FAST_BALL_TROPHY_ITEM.get());
+                        output.accept(FEATHER_TROPHY_SMALL_ITEM.get());
+                        output.accept(FRIEND_BALL_TROPHY_ITEM.get());
+                        output.accept(GREAT_BALL_TROPHY_ITEM.get());
+                        output.accept(HEAL_BALL_TROPHY_ITEM.get());
+                        output.accept(HEAVY_BALL_TROPHY_ITEM.get());
+                        output.accept(LEVEL_BALL_TROPHY_ITEM.get());
+                        output.accept(LOVE_BALL_TROPHY_ITEM.get());
+                        output.accept(NEST_BALL_TROPHY_ITEM.get());
+                        output.accept(NET_BALL_TROPHY_ITEM.get());
+                        output.accept(PARK_BALL_TROPHY_ITEM.get());
+                        output.accept(POKEBALL_TROPHY_ITEM.get());
+                        output.accept(PREMIER_BALL_TROPHY_ITEM.get());
+                        output.accept(REPEAT_BALL_TROPHY_ITEM.get());
+                        output.accept(ROSEATE_BALL_TROPHY_ITEM.get());
+                        output.accept(SLATE_BALL_TROPHY_ITEM.get());
+                        output.accept(SPORT_BALL_TROPHY_ITEM.get());
+                        output.accept(ULTRA_BALL_TROPHY_ITEM.get());
+                        output.accept(VERDANT_BALL_TROPHY_ITEM.get());
                     })
                     .build());
 

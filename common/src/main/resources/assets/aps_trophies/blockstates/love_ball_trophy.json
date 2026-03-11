@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "aps_trophies:block/love_ball_trophy",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "aps_trophies:block/love_ball_trophy"
+    },
+    "facing=south": {
+      "model": "aps_trophies:block/love_ball_trophy",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "aps_trophies:block/love_ball_trophy",
+      "y": 270
+    }
+  }
+}

@@ -57,6 +57,29 @@ public class APSTrophies implements ModInitializer {
     public static final Block LUCARIO_POKEBALL_TROPHY = new TrophyBlock(trophyProps());
     public static final Block MELMETAL_GREATBALL_TROPHY = new TrophyBlock(trophyProps());
     public static final Block REGIGIGAS_ULTRABALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block AZURE_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block CHERISH_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block CITRINE_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block DREAM_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block FAST_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block FEATHER_TROPHY_SMALL = new TrophyBlock(trophyProps());
+    public static final Block FRIEND_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block GREAT_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block HEAL_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block HEAVY_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block LEVEL_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block LOVE_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block NEST_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block NET_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block PARK_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block POKEBALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block PREMIER_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block REPEAT_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block ROSEATE_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block SLATE_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block SPORT_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block ULTRA_BALL_TROPHY = new TrophyBlock(trophyProps());
+    public static final Block VERDANT_BALL_TROPHY = new TrophyBlock(trophyProps());
 
     public static final Item TIMERBALL_TROPHY_SMALL_ITEM = new BlockItem(TIMERBALL_TROPHY_SMALL, new Item.Properties());
     public static final Item SAFARIBALL_TROPHY_SMALL_ITEM = new BlockItem(SAFARIBALL_TROPHY_SMALL, new Item.Properties());
@@ -93,6 +116,29 @@ public class APSTrophies implements ModInitializer {
     public static final Item LUCARIO_POKEBALL_TROPHY_ITEM = new BlockItem(LUCARIO_POKEBALL_TROPHY, new Item.Properties());
     public static final Item MELMETAL_GREATBALL_TROPHY_ITEM = new BlockItem(MELMETAL_GREATBALL_TROPHY, new Item.Properties());
     public static final Item REGIGIGAS_ULTRABALL_TROPHY_ITEM = new BlockItem(REGIGIGAS_ULTRABALL_TROPHY, new Item.Properties());
+    public static final Item AZURE_BALL_TROPHY_ITEM = new BlockItem(AZURE_BALL_TROPHY, new Item.Properties());
+    public static final Item CHERISH_BALL_TROPHY_ITEM = new BlockItem(CHERISH_BALL_TROPHY, new Item.Properties());
+    public static final Item CITRINE_BALL_TROPHY_ITEM = new BlockItem(CITRINE_BALL_TROPHY, new Item.Properties());
+    public static final Item DREAM_BALL_TROPHY_ITEM = new BlockItem(DREAM_BALL_TROPHY, new Item.Properties());
+    public static final Item FAST_BALL_TROPHY_ITEM = new BlockItem(FAST_BALL_TROPHY, new Item.Properties());
+    public static final Item FEATHER_TROPHY_SMALL_ITEM = new BlockItem(FEATHER_TROPHY_SMALL, new Item.Properties());
+    public static final Item FRIEND_BALL_TROPHY_ITEM = new BlockItem(FRIEND_BALL_TROPHY, new Item.Properties());
+    public static final Item GREAT_BALL_TROPHY_ITEM = new BlockItem(GREAT_BALL_TROPHY, new Item.Properties());
+    public static final Item HEAL_BALL_TROPHY_ITEM = new BlockItem(HEAL_BALL_TROPHY, new Item.Properties());
+    public static final Item HEAVY_BALL_TROPHY_ITEM = new BlockItem(HEAVY_BALL_TROPHY, new Item.Properties());
+    public static final Item LEVEL_BALL_TROPHY_ITEM = new BlockItem(LEVEL_BALL_TROPHY, new Item.Properties());
+    public static final Item LOVE_BALL_TROPHY_ITEM = new BlockItem(LOVE_BALL_TROPHY, new Item.Properties());
+    public static final Item NEST_BALL_TROPHY_ITEM = new BlockItem(NEST_BALL_TROPHY, new Item.Properties());
+    public static final Item NET_BALL_TROPHY_ITEM = new BlockItem(NET_BALL_TROPHY, new Item.Properties());
+    public static final Item PARK_BALL_TROPHY_ITEM = new BlockItem(PARK_BALL_TROPHY, new Item.Properties());
+    public static final Item POKEBALL_TROPHY_ITEM = new BlockItem(POKEBALL_TROPHY, new Item.Properties());
+    public static final Item PREMIER_BALL_TROPHY_ITEM = new BlockItem(PREMIER_BALL_TROPHY, new Item.Properties());
+    public static final Item REPEAT_BALL_TROPHY_ITEM = new BlockItem(REPEAT_BALL_TROPHY, new Item.Properties());
+    public static final Item ROSEATE_BALL_TROPHY_ITEM = new BlockItem(ROSEATE_BALL_TROPHY, new Item.Properties());
+    public static final Item SLATE_BALL_TROPHY_ITEM = new BlockItem(SLATE_BALL_TROPHY, new Item.Properties());
+    public static final Item SPORT_BALL_TROPHY_ITEM = new BlockItem(SPORT_BALL_TROPHY, new Item.Properties());
+    public static final Item ULTRA_BALL_TROPHY_ITEM = new BlockItem(ULTRA_BALL_TROPHY, new Item.Properties());
+    public static final Item VERDANT_BALL_TROPHY_ITEM = new BlockItem(VERDANT_BALL_TROPHY, new Item.Properties());
 
     @Override
     public void onInitialize() {
@@ -131,6 +177,29 @@ public class APSTrophies implements ModInitializer {
         registerBlock("lucario_pokeball_trophy", LUCARIO_POKEBALL_TROPHY);
         registerBlock("melmetal_greatball_trophy", MELMETAL_GREATBALL_TROPHY);
         registerBlock("regigigas_ultraball_trophy", REGIGIGAS_ULTRABALL_TROPHY);
+        registerBlock("azure_ball_trophy", AZURE_BALL_TROPHY);
+        registerBlock("cherish_ball_trophy", CHERISH_BALL_TROPHY);
+        registerBlock("citrine_ball_trophy", CITRINE_BALL_TROPHY);
+        registerBlock("dream_ball_trophy", DREAM_BALL_TROPHY);
+        registerBlock("fast_ball_trophy", FAST_BALL_TROPHY);
+        registerBlock("feather_trophy_small", FEATHER_TROPHY_SMALL);
+        registerBlock("friend_ball_trophy", FRIEND_BALL_TROPHY);
+        registerBlock("great_ball_trophy", GREAT_BALL_TROPHY);
+        registerBlock("heal_ball_trophy", HEAL_BALL_TROPHY);
+        registerBlock("heavy_ball_trophy", HEAVY_BALL_TROPHY);
+        registerBlock("level_ball_trophy", LEVEL_BALL_TROPHY);
+        registerBlock("love_ball_trophy", LOVE_BALL_TROPHY);
+        registerBlock("nest_ball_trophy", NEST_BALL_TROPHY);
+        registerBlock("net_ball_trophy", NET_BALL_TROPHY);
+        registerBlock("park_ball_trophy", PARK_BALL_TROPHY);
+        registerBlock("pokeball_trophy", POKEBALL_TROPHY);
+        registerBlock("premier_ball_trophy", PREMIER_BALL_TROPHY);
+        registerBlock("repeat_ball_trophy", REPEAT_BALL_TROPHY);
+        registerBlock("roseate_ball_trophy", ROSEATE_BALL_TROPHY);
+        registerBlock("slate_ball_trophy", SLATE_BALL_TROPHY);
+        registerBlock("sport_ball_trophy", SPORT_BALL_TROPHY);
+        registerBlock("ultra_ball_trophy", ULTRA_BALL_TROPHY);
+        registerBlock("verdant_ball_trophy", VERDANT_BALL_TROPHY);
 
         registerItem("timerball_trophy_small", TIMERBALL_TROPHY_SMALL_ITEM);
         registerItem("safariball_trophy_small", SAFARIBALL_TROPHY_SMALL_ITEM);
@@ -167,6 +236,29 @@ public class APSTrophies implements ModInitializer {
         registerItem("lucario_pokeball_trophy", LUCARIO_POKEBALL_TROPHY_ITEM);
         registerItem("melmetal_greatball_trophy", MELMETAL_GREATBALL_TROPHY_ITEM);
         registerItem("regigigas_ultraball_trophy", REGIGIGAS_ULTRABALL_TROPHY_ITEM);
+        registerItem("azure_ball_trophy", AZURE_BALL_TROPHY_ITEM);
+        registerItem("cherish_ball_trophy", CHERISH_BALL_TROPHY_ITEM);
+        registerItem("citrine_ball_trophy", CITRINE_BALL_TROPHY_ITEM);
+        registerItem("dream_ball_trophy", DREAM_BALL_TROPHY_ITEM);
+        registerItem("fast_ball_trophy", FAST_BALL_TROPHY_ITEM);
+        registerItem("feather_trophy_small", FEATHER_TROPHY_SMALL_ITEM);
+        registerItem("friend_ball_trophy", FRIEND_BALL_TROPHY_ITEM);
+        registerItem("great_ball_trophy", GREAT_BALL_TROPHY_ITEM);
+        registerItem("heal_ball_trophy", HEAL_BALL_TROPHY_ITEM);
+        registerItem("heavy_ball_trophy", HEAVY_BALL_TROPHY_ITEM);
+        registerItem("level_ball_trophy", LEVEL_BALL_TROPHY_ITEM);
+        registerItem("love_ball_trophy", LOVE_BALL_TROPHY_ITEM);
+        registerItem("nest_ball_trophy", NEST_BALL_TROPHY_ITEM);
+        registerItem("net_ball_trophy", NET_BALL_TROPHY_ITEM);
+        registerItem("park_ball_trophy", PARK_BALL_TROPHY_ITEM);
+        registerItem("pokeball_trophy", POKEBALL_TROPHY_ITEM);
+        registerItem("premier_ball_trophy", PREMIER_BALL_TROPHY_ITEM);
+        registerItem("repeat_ball_trophy", REPEAT_BALL_TROPHY_ITEM);
+        registerItem("roseate_ball_trophy", ROSEATE_BALL_TROPHY_ITEM);
+        registerItem("slate_ball_trophy", SLATE_BALL_TROPHY_ITEM);
+        registerItem("sport_ball_trophy", SPORT_BALL_TROPHY_ITEM);
+        registerItem("ultra_ball_trophy", ULTRA_BALL_TROPHY_ITEM);
+        registerItem("verdant_ball_trophy", VERDANT_BALL_TROPHY_ITEM);
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
                 ResourceLocation.fromNamespaceAndPath(MOD_ID, "trophies"),
@@ -209,6 +301,29 @@ public class APSTrophies implements ModInitializer {
                             output.accept(LUCARIO_POKEBALL_TROPHY_ITEM);
                             output.accept(MELMETAL_GREATBALL_TROPHY_ITEM);
                             output.accept(REGIGIGAS_ULTRABALL_TROPHY_ITEM);
+                            output.accept(AZURE_BALL_TROPHY_ITEM);
+                            output.accept(CHERISH_BALL_TROPHY_ITEM);
+                            output.accept(CITRINE_BALL_TROPHY_ITEM);
+                            output.accept(DREAM_BALL_TROPHY_ITEM);
+                            output.accept(FAST_BALL_TROPHY_ITEM);
+                            output.accept(FEATHER_TROPHY_SMALL_ITEM);
+                            output.accept(FRIEND_BALL_TROPHY_ITEM);
+                            output.accept(GREAT_BALL_TROPHY_ITEM);
+                            output.accept(HEAL_BALL_TROPHY_ITEM);
+                            output.accept(HEAVY_BALL_TROPHY_ITEM);
+                            output.accept(LEVEL_BALL_TROPHY_ITEM);
+                            output.accept(LOVE_BALL_TROPHY_ITEM);
+                            output.accept(NEST_BALL_TROPHY_ITEM);
+                            output.accept(NET_BALL_TROPHY_ITEM);
+                            output.accept(PARK_BALL_TROPHY_ITEM);
+                            output.accept(POKEBALL_TROPHY_ITEM);
+                            output.accept(PREMIER_BALL_TROPHY_ITEM);
+                            output.accept(REPEAT_BALL_TROPHY_ITEM);
+                            output.accept(ROSEATE_BALL_TROPHY_ITEM);
+                            output.accept(SLATE_BALL_TROPHY_ITEM);
+                            output.accept(SPORT_BALL_TROPHY_ITEM);
+                            output.accept(ULTRA_BALL_TROPHY_ITEM);
+                            output.accept(VERDANT_BALL_TROPHY_ITEM);
                         })
                         .build());
     }
